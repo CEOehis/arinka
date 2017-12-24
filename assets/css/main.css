@@ -95,24 +95,25 @@ button {
   border: 0;
   padding: 0; }
 
-body, html {
+body,
+html {
+  font-family: 'Catamaran', sans-serif;
   width: 100%;
-  height: 100%;
-  font-family: 'Catamaran', sans-serif; }
+  height: 100%; }
 
 header {
-  background: linear-gradient(#EB5757, #D59152);
+  height: 100%;
   color: white;
-  height: 100%; }
+  background: linear-gradient(#eb5757, #d59152); }
 
 /* components */
 .btn {
-  border-radius: 500px;
-  padding: 15px 30px;
-  margin: 0 auto;
-  text-align: center;
   display: block;
-  text-transform: uppercase; }
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 500px; }
 
 /* typography */
 h1 {
@@ -124,29 +125,29 @@ p {
 
 /* navbar */
 .nav {
-  padding: 10px 20px;
-  position: relative; }
+  position: relative;
+  padding: 10px 20px; }
   .nav__links {
-    text-transform: uppercase;
-    background: #EB5757;
     position: absolute;
-    margin-left: -20px;
     width: 300px;
-    transition: transform .3s ease; }
+    margin-left: -20px;
+    transition: transform .3s ease;
+    text-transform: uppercase;
+    background: #eb5757; }
     .nav__links_collapsed {
       transform: translate(-300px, 0); }
     .nav__links_expanded {
       transform: translate(0, 0); }
     .nav__links a {
-      padding: 15px 0;
-      display: block; }
+      display: block;
+      padding: 15px 0; }
     .nav__links ul {
       padding-left: 20px; }
   .nav__btn {
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
     width: 80%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2); }
 
 .nav-header {
   display: flex;
@@ -172,18 +173,18 @@ p {
   .nav-header__bar {
     width: 35px;
     height: 2px;
-    background-color: white;
     margin: 9px 0;
-    transition: 0.4s; }
+    transition: .4s;
+    background-color: white; }
 
 /* hero */
 .hero {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   height: 80%;
   padding: 10px 20px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
+  text-align: center;
+  justify-content: space-between; }
   .hero h1 {
     font-weight: 900; }
   .hero p {
@@ -194,25 +195,25 @@ p {
     border: none;
     border-radius: 500px; }
     .hero input::placeholder {
-      color: #C3C0C0;
-      text-align: center; }
+      text-align: center;
+      color: #c3c0c0; }
 
 /* content */
 .content {
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align: center;
-  padding: 0 20px; }
+  padding: 0 20px;
+  text-align: center; }
   .content h2 {
-    color: #C3C0C0;
     padding-bottom: 30px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #c3c0c0; }
 
 /* places */
 .places {
-  padding-left: 15px;
+  margin-bottom: 50px;
   padding-right: 15px;
-  margin-bottom: 50px; }
+  padding-left: 15px; }
 
 .locations {
   position: relative;
@@ -220,43 +221,43 @@ p {
   .locations__card {
     position: relative; }
     .locations__card:after {
-      content: '';
       position: absolute;
-      background: rgba(0, 0, 0, 0.3);
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 5px; }
+      content: '';
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.3); }
     .locations__card:hover:after {
       background: none; }
   .locations img {
     border-radius: 5px; }
   .locations__caption {
+    font-weight: bold;
     position: absolute;
-    left: 15px;
     bottom: 20px;
-    color: white;
-    font-weight: bold; }
+    left: 15px;
+    color: white; }
     .locations__caption h3 {
       font-size: 1.3em; }
     .locations__caption p {
       font-size: 1em;
-      color: #D78E52; }
+      color: #d78e52; }
   .locations__btn {
-    color: #D78E52;
+    color: #d78e52;
     border: 1px solid; }
 
 /* blog */
 .blog {
-  background: linear-gradient(#EB5757, #D59152);
-  color: white; }
+  color: white;
+  background: linear-gradient(#eb5757, #d59152); }
   .blog h3 {
-    color: #FEBE61;
+    font-size: 1em;
     padding: 30px 0;
-    text-transform: uppercase;
     text-align: center;
-    font-size: 1em; }
+    text-transform: uppercase;
+    color: #febe61; }
   .blog p {
     font-size: 3em;
     font-weight: bold;
@@ -264,14 +265,14 @@ p {
     padding-bottom: 30px; }
 
 .blog-list {
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 /* footer */
 footer {
-  color: #C3C0C0;
+  padding: 15px 0;
   text-align: center;
-  padding: 15px 0; }
+  color: #c3c0c0; }
   footer * {
     padding-bottom: 5px; }
   footer a {
