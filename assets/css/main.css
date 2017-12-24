@@ -241,3 +241,23 @@ p {
   .locations__button {
     color: #D78E52;
     border: 1px solid; }
+
+/* blog */
+.blog {
+  background: linear-gradient(#EB5757, #D59152);
+  color: white; }
+  .blog h3 {
+    color: #FEBE61;
+    padding: 30px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em; }
+  .blog p {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 44px;
+    padding-bottom: 30px; }
+
+.blog-list {
+  padding-left: 15px;
+  padding-right: 15px; }
