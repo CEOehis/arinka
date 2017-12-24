@@ -108,6 +108,10 @@ header {
 h1 {
   font-size: 3.5em; }
 
+p {
+  font-size: 1.1em;
+  line-height: 24px; }
+
 /* navbar */
 .nav {
   padding: 10px 20px;
@@ -166,8 +170,6 @@ h1 {
   justify-content: space-between;
   flex-direction: column; }
   .hero p {
-    font-size: 1.1em;
-    line-height: 24px;
     padding-bottom: 10px; }
   .hero input {
     width: 100%;
@@ -177,3 +179,14 @@ h1 {
     .hero input::placeholder {
       color: #C3C0C0;
       text-align: center; }
+
+/* content */
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 0 20px; }
+  .content h2 {
+    color: #C3C0C0;
+    padding-bottom: 30px;
+    text-transform: uppercase; }
