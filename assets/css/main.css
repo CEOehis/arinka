@@ -95,16 +95,26 @@ button {
   border: 0;
   padding: 0; }
 
-body {
-  background: #EB5757;
-  color: white; }
+body, html {
+  width: 100%;
+  height: 100%; }
 
+header {
+  background: linear-gradient(#EB5757, #D59152);
+  color: white;
+  height: 100%; }
+
+/* typography */
+h1 {
+  font-size: 3.5em; }
+
+/* navbar */
 .nav {
   padding: 10px 20px;
   position: relative; }
   .nav__links {
     text-transform: uppercase;
-    background: #D59152;
+    background: linear-gradient(#EB5757, #D59152);
     position: absolute;
     margin-left: -20px;
     width: 300px;
@@ -146,3 +156,24 @@ body {
     background-color: white;
     margin: 9px 0;
     transition: 0.4s; }
+
+/* hero */
+.hero {
+  text-align: center;
+  height: 80%;
+  padding: 10px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .hero p {
+    font-size: 1.1em;
+    line-height: 24px;
+    padding-bottom: 10px; }
+  .hero input {
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 500px; }
+    .hero input::placeholder {
+      color: #C3C0C0;
+      text-align: center; }
