@@ -261,3 +261,14 @@ p {
 .blog-list {
   padding-left: 15px;
   padding-right: 15px; }
+
+/* footer */
+footer {
+  color: #C3C0C0;
+  text-align: center;
+  padding: 15px 0; }
+  footer * {
+    padding-bottom: 5px; }
+  footer a {
+    font-weight: bold;
+    text-decoration: none; }

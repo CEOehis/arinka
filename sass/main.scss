@@ -222,3 +222,17 @@ p {
 	padding-left: 15px;
 	padding-right: 15px;	
 }
+
+/* footer */
+footer {
+	color: $light-grey;
+	text-align: center;
+	padding: 15px 0;
+	* {
+		padding-bottom: 5px;
+	}
+	a {
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
