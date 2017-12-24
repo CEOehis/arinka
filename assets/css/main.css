@@ -179,6 +179,8 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
+  .hero h1 {
+    font-weight: 900; }
   .hero p {
     padding-bottom: 10px; }
   .hero input {

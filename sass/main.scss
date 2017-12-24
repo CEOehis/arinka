@@ -118,6 +118,9 @@ p {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	h1 {
+		font-weight: 900;
+	}
 	p {
 		padding-bottom: 10px;
 	}
