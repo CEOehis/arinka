@@ -21,7 +21,7 @@ header {
 /* components */
 .btn {
 	border-radius: 500px;
-	padding: 10px 30px;
+	padding: 15px 30px;
 	margin: 0 auto;
 	text-align: center;
 	display: block;
@@ -67,6 +67,12 @@ p {
 		ul {
 			padding-left: 20px;
 		}
+	}
+	&__btn {
+		color: white;
+		background: rgba(255,255,255,0.2);
+		width: 80%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -193,7 +199,7 @@ p {
 			color: $dark-brown;
 		}
 	}
-	&__button {
+	&__btn {
 		color: $dark-brown;
 		border: 1px solid;
 	}

@@ -108,7 +108,7 @@ header {
 /* components */
 .btn {
   border-radius: 500px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -142,6 +142,11 @@ p {
       display: block; }
     .nav__links ul {
       padding-left: 20px; }
+  .nav__btn {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin-bottom: 20px; }
 
 .nav-header {
   display: flex;
@@ -238,7 +243,7 @@ p {
     .locations__caption p {
       font-size: 1em;
       color: #D78E52; }
-  .locations__button {
+  .locations__btn {
     color: #D78E52;
     border: 1px solid; }
 
