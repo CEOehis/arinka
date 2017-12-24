@@ -97,12 +97,22 @@ button {
 
 body, html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Catamaran', sans-serif; }
 
 header {
   background: linear-gradient(#EB5757, #D59152);
   color: white;
   height: 100%; }
+
+/* components */
+.btn {
+  border-radius: 500px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  text-transform: uppercase; }
 
 /* typography */
 h1 {
@@ -118,7 +128,7 @@ p {
   position: relative; }
   .nav__links {
     text-transform: uppercase;
-    background: linear-gradient(#EB5757, #D59152);
+    background: #EB5757;
     position: absolute;
     margin-left: -20px;
     width: 300px;
@@ -190,3 +200,42 @@ p {
     color: #C3C0C0;
     padding-bottom: 30px;
     text-transform: uppercase; }
+
+/* places */
+.places {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px; }
+
+.locations {
+  position: relative;
+  margin-bottom: 30px; }
+  .locations__card {
+    position: relative; }
+    .locations__card:after {
+      content: '';
+      position: absolute;
+      background: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px; }
+    .locations__card:hover:after {
+      background: none; }
+  .locations img {
+    border-radius: 5px; }
+  .locations__caption {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    color: white;
+    font-weight: bold; }
+    .locations__caption h3 {
+      font-size: 1.3em; }
+    .locations__caption p {
+      font-size: 1em;
+      color: #D78E52; }
+  .locations__button {
+    color: #D78E52;
+    border: 1px solid; }
