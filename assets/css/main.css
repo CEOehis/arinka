@@ -1,0 +1,148 @@
+/*
+ * Fix
+ * Version 0.1.1
+ * https://github.com/jaydenseric/Fix
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  line-height: 1;
+  font-family: sans-serif; }
+
+iframe {
+  border: 0; }
+
+main {
+  display: block; }
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0; }
+
+li {
+  display: block; }
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+dd {
+  margin-left: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: inherit; }
+
+blockquote {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+sup {
+  position: relative;
+  top: -.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0; }
+
+strong {
+  font-weight: bold; }
+
+figure {
+  margin: 0; }
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+body {
+  background: #EB5757;
+  color: white; }
+
+.nav {
+  padding: 10px 20px;
+  position: relative; }
+  .nav__links {
+    text-transform: uppercase;
+    background: #D59152;
+    position: absolute;
+    margin-left: -20px;
+    width: 300px;
+    transition: transform .3s ease; }
+    .nav__links_collapsed {
+      transform: translate(-300px, 0); }
+    .nav__links_expanded {
+      transform: translate(0, 0); }
+    .nav__links a {
+      padding: 10px 0;
+      display: block; }
+    .nav__links ul {
+      padding-left: 20px; }
+
+.nav-header {
+  display: flex;
+  justify-content: space-between; }
+  .nav-header a {
+    padding: 10px 0; }
+    .nav-header a * {
+      display: inline-block; }
+  .nav-header p {
+    font-weight: bold;
+    padding-left: 10px;
+    text-transform: uppercase; }
+  .nav-header__menu {
+    cursor: pointer; }
+    .nav-header__menu-expanded .bar-1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px); }
+    .nav-header__menu-expanded .bar-2 {
+      opacity: 0; }
+    .nav-header__menu-expanded .bar-3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px); }
+  .nav-header__bar {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 9px 0;
+    transition: 0.4s; }

@@ -1,20 +1,78 @@
 @import "normalize";
 
 body {
-	background: teal;
+	background: #EB5757;
+	color: white
+}
+
+
+.nav {
+	padding: 10px 20px;
+	position: relative;
+
+	&__links {
+		text-transform: uppercase;
+		background: #D59152;
+		position: absolute;
+		margin-left: -20px;
+		width: 300px;
+		transition: transform .3s ease;
+
+		&_collapsed {
+			transform: translate(-300px, 0);
+		}
+
+		&_expanded {
+			transform: 	translate(0,0);
+		}
+
+		a {
+			padding: 10px 0;
+			display: block;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+	}
 }
 
 .nav-header {
 	display: flex;
 	justify-content: space-between;
 
-	&__menu {
+	a {
+		padding: 10px 0;
+		* {
+			display: inline-block;
+		}
+	}
+	p {
+		font-weight: bold;
+		padding-left: 10px;
+		text-transform: uppercase;
+	}
 
+	&__menu {
+		cursor: pointer;
+		&-expanded {
+			.bar-1 {
+				-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		    				transform: rotate(-45deg) translate(-9px, 6px);
+			}
+			.bar-2 {
+				opacity: 0;
+			}
+			.bar-3 {
+				-webkit-transform: rotate(45deg) translate(-8px, -8px);
+								transform: rotate(45deg) translate(-8px, -8px);
+			}
+		}
 	}
 	&__bar {
 		width: 35px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     margin: 9px 0;
     transition: 0.4s;
 	}
