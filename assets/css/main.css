@@ -3,6 +3,9 @@
  * Version 0.1.1
  * https://github.com/jaydenseric/Fix
 */
+* {
+  box-sizing: border-box; }
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -197,6 +200,7 @@ p {
     padding-bottom: 10px; }
   .hero input {
     width: 100%;
+    max-width: 500px;
     padding: 15px 15px;
     border: none;
     border-radius: 500px; }
@@ -284,3 +288,16 @@ footer {
   footer a {
     font-weight: bold;
     text-decoration: none; }
+
+/* media queries */
+@media screen and (min-width: 600px) {
+  .content p {
+    max-width: 500px;
+    margin: 0 auto; }
+  .nav__links {
+    width: 550px; }
+    .nav__links_collapsed {
+      transform: translate(-550px, 0); }
+  .hero h1 {
+    max-width: 500px;
+    margin: auto; } }

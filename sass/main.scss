@@ -172,6 +172,7 @@ p {
   }
   input {
     width: 100%;
+    max-width: 500px;
     padding: 15px 15px;
 
     border: none;
@@ -310,5 +311,25 @@ footer {
     font-weight: bold;
 
     text-decoration: none;
+  }
+}
+
+/* media queries */
+@media screen and(min-width: 600px) {
+  .content p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .nav__links {
+    width: 550px;
+    &_collapsed {
+      transform: translate(-550px, 0);
+    }
+  }
+
+  .hero h1 {
+    max-width: 500px;
+    margin: auto;
   }
 }
