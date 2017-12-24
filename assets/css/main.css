@@ -138,7 +138,7 @@ p {
     .nav__links_expanded {
       transform: translate(0, 0); }
     .nav__links a {
-      padding: 10px 0;
+      padding: 15px 0;
       display: block; }
     .nav__links ul {
       padding-left: 20px; }
