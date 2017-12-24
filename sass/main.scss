@@ -343,4 +343,15 @@ footer {
   .locations__btn {
     grid-column: 2/3;
   }
+
+  .blog-list {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+  }
+
+  .blog img {
+    width: 50%;
+
+  }
 }
