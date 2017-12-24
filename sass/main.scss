@@ -317,7 +317,7 @@ footer {
 /* media queries */
 @media screen and(min-width: 600px) {
   .content p {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -329,7 +329,18 @@ footer {
   }
 
   .hero h1 {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
+  }
+
+  .places {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 2%;
+    margin: 0 auto 50px;
+    max-width: 1000px;
+  }
+  .locations__btn {
+    grid-column: 2/3;
   }
 }
