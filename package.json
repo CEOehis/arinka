@@ -1,0 +1,27 @@
+{
+  "name": "arinka",
+  "version": "1.0.0",
+  "description": "Responsive web design challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Celestine Ekoh-Ordan",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "latest",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
