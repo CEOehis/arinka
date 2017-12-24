@@ -82,10 +82,17 @@ p {
       display: block;
 
       padding: 15px 0;
+      &:hover {
+        background: white;
+        color: $red;
+        font-weight: bold;
+      }
     }
 
     ul {
+      border-top: 1px solid white;
       padding-left: 20px;
+      padding-bottom: 20px;
     }
   }
   &__btn {
