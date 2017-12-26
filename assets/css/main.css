@@ -202,7 +202,7 @@ p {
     width: 100%;
     max-width: 500px;
     padding: 15px 15px;
-    border: 1px solid #d78e52;
+    border: 2px solid #d78e52;
     border-radius: 500px; }
     .hero input::placeholder {
       text-align: center;
@@ -323,4 +323,32 @@ footer {
     bottom: 7%;
     width: 500px;
     left: 50%;
-    margin-left: -250px; } }
+    margin-left: -250px; }
+  .nav__links {
+    width: 100%;
+    margin: initial;
+    left: 0;
+    right: 0; }
+    .nav__links_collapsed {
+      transform: unset; }
+    .nav__links ul {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: none; }
+    .nav__links li {
+      display: inline-block;
+      margin-right: 20px; }
+    .nav__links a {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 500px; }
+  .nav__btn {
+    width: initial;
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    margin: auto; }
+  .nav-header__menu {
+    display: none; } }
