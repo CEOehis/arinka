@@ -16,8 +16,7 @@
     "gulp-babel": "^7.0.0",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
-    "gulp-sass": "latest",
-    "gulp-uglify": "latest"
+    "gulp-sass": "latest"
   },
   "babel": {
     "presets": [
