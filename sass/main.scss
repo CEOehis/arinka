@@ -385,6 +385,10 @@ footer {
   header {
     height: 90%;
   }
+  .hero h1 {
+    max-width: 700px;
+    margin: auto;
+  }
   .hero div {
     position: absolute;
     bottom: 7%;
@@ -428,6 +432,24 @@ footer {
 
   .nav-header__menu {
     display: none;
+  }
+
+  .footer-items {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #coypright {
+    order: 3;
+  }
+
+  nav {
+    max-width: 1200px;
+    margin: auto;
   }
 }
 
