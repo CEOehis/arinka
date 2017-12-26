@@ -175,7 +175,7 @@ p {
     max-width: 500px;
     padding: 15px 15px;
 
-    border: none;
+    border: 1px solid $dark-brown;
     border-radius: 500px;
     &::placeholder {
       text-align: center;
@@ -346,12 +346,24 @@ footer {
 
   .blog-list {
     display: inline-block;
-    vertical-align: bottom;
     width: 50%;
   }
 
   .blog img {
     width: 50%;
 
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    height: 90%;
+  }
+  .hero div {
+    position: absolute;
+    bottom: 7%;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
   }
 }

@@ -202,7 +202,7 @@ p {
     width: 100%;
     max-width: 500px;
     padding: 15px 15px;
-    border: none;
+    border: 1px solid #d78e52;
     border-radius: 500px; }
     .hero input::placeholder {
       text-align: center;
@@ -311,7 +311,16 @@ footer {
     grid-column: 2/3; }
   .blog-list {
     display: inline-block;
-    vertical-align: bottom;
     width: 50%; }
   .blog img {
     width: 50%; } }
+
+@media screen and (min-width: 900px) {
+  header {
+    height: 90%; }
+  .hero div {
+    position: absolute;
+    bottom: 7%;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px; } }
