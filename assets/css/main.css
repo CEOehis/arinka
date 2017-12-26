@@ -157,6 +157,8 @@ p {
     margin-bottom: 20px;
     color: white;
     background: rgba(255, 255, 255, 0.2); }
+    .nav__btn:hover {
+      background: rgba(255, 255, 255, 0.5); }
 
 .nav-header {
   display: flex;
