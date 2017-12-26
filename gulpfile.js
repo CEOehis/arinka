@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var babel = require('gulp-babel');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
 // todo: livereload, watch, sass, minify
@@ -34,7 +33,6 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     gulp.src('scripts/*.js')
       .pipe(babel())
-      .pipe(uglify())
       .pipe(concat('script.js'))
       .pipe(gulp.dest('assets/js'));
 });
